@@ -10,11 +10,11 @@ var customPow = function() {
 			alert(result);
 			}
 			else {
-				alert ("Некорректный ввод");
+				alert ("Необходимо ввести числовое значение выполнение прекращено");
 			};
 		}
 	else {
-	alert ("Некорректный ввод");
+	alert ("Необходимо ввести числовое значение выполнение прекращено");
 	};
 };
 
@@ -26,11 +26,11 @@ var autorization = function() {
 		names[i] = prompt("Введите имя " + (i+1) + " для заполнения массива");
 		console.log(names[i]);
 		if (names[i]==='' || names[i]===null) {
-			alert ("Некорректный ввод");
+			alert ("Некорректный ввод считывание вводных прекращено");
 			break;}
 		}
 
-if (names.length>1)/*(names[0]!=='' && names[0]!==null)*/ {
+if (names.length>1) {
 	userName = prompt("Введите ваше имя:");
 	var autorized='not';
 
@@ -43,7 +43,7 @@ if (names.length>1)/*(names[0]!=='' && names[0]!==null)*/ {
 	}
 
 		if (autorized=='not') {
-			alert("error");
+			alert("Ошибка входа");
 		}
 
 		else {
@@ -51,7 +51,7 @@ if (names.length>1)/*(names[0]!=='' && names[0]!==null)*/ {
 		}
 	}
 	else {
-			alert("error");
+			alert("Некорректный ввод параметров");
 	}
 };
 customPow();
